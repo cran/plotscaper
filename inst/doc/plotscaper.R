@@ -8,6 +8,9 @@ knitr::opts_chunk$set(
 
 ## -----------------------------------------------------------------------------
 library(plotscaper)
+
+httpuv::stopAllServers()
+
 names(airquality) <- c("ozone", "solar radiation", "wind", 
                        "temperature", "month", "day")
 

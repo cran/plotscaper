@@ -53,6 +53,12 @@ schema |>
   render()
 
 ## -----------------------------------------------------------------------------
+schema |> 
+  set_scale("plot1", "x", transformation = "log10") |> 
+  set_scale("plot1", "y", transformation = "sqrt") |>
+  render()
+
+## -----------------------------------------------------------------------------
 #  # NOT RUN - this only works in an active R session
 #  scene |> get_scale("plot1", "x")
 
