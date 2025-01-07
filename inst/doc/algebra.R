@@ -33,10 +33,10 @@ ggplot(mtcars, aes(x = cyl, y = mpg, fill = am)) +
   guides(fill = "none")
 
 ## -----------------------------------------------------------------------------
-#  geom_bar(stat = "summary", fun = mean)
+# geom_bar(stat = "summary", fun = mean)
 
 ## -----------------------------------------------------------------------------
-#  geom_bar(stat = "summary", fun = mean, position = "stack")
+# geom_bar(stat = "summary", fun = mean, position = "stack")
 
 ## -----------------------------------------------------------------------------
 mean(1:3)

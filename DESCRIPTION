@@ -1,6 +1,6 @@
 Package: plotscaper
 Title: Explore Your Data with Interactive Figures
-Version: 0.2.5
+Version: 0.2.6
 Authors@R: 
     person("Adam", "Bartonicek", , "bartonicek@gmail.com", role = c("aut", "cre", "cph"))
 Description: A framework for creating interactive figures for data exploration. 
@@ -21,8 +21,8 @@ URL: https://bartonicek.github.io/plotscaper/,
 VignetteBuilder: knitr
 BugReports: https://github.com/bartonicek/plotscaper/issues
 NeedsCompilation: no
-Packaged: 2024-12-22 09:22:36 UTC; adam
+Packaged: 2025-01-07 15:32:15 UTC; adam
 Author: Adam Bartonicek [aut, cre, cph]
 Maintainer: Adam Bartonicek <bartonicek@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-12-22 09:40:02 UTC
+Date/Publication: 2025-01-07 15:50:02 UTC

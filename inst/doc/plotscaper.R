@@ -4,7 +4,7 @@ knitr::opts_chunk$set(
   comment = "#>")
 
 ## -----------------------------------------------------------------------------
-#  devtools::install_github("bartonicek/plotscaper")
+# devtools::install_github("bartonicek/plotscaper")
 
 ## -----------------------------------------------------------------------------
 library(plotscaper)
@@ -49,33 +49,35 @@ scene <- schema |> render()
 scene
 
 ## -----------------------------------------------------------------------------
-#  scene |> select_cases(1:10)
+# scene |> select_cases(1:10)
 
 ## -----------------------------------------------------------------------------
-#  # NOT RUN
-#  scene <- schema |> select_cases(20:30) |> render()
-#  scene
-#  scene
+# # NOT RUN
+# scene <- schema |> select_cases(20:30) |> render()
+# scene
+# scene
 
 ## -----------------------------------------------------------------------------
-#  # NOT RUN
-#  scene <- schema |> render()
-#  scene |> select_cases(20:30)
-#  scene |> select_cases(20:30)
+# # NOT RUN
+# scene <- schema |> render()
+# scene |> select_cases(20:30)
+# scene |> select_cases(20:30)
 
 ## -----------------------------------------------------------------------------
+try({
 interactive()
 scene |> select_cases(1:10)
+})
 
 ## -----------------------------------------------------------------------------
-#  scene |> selected_cases()
-#  scene |> assigned_cases()
+# scene |> selected_cases()
+# scene |> assigned_cases()
 
 ## -----------------------------------------------------------------------------
-#  start_server(random_port = TRUE) # Starts a server on a new random port
+# start_server(random_port = TRUE) # Starts a server on a new random port
 
 ## -----------------------------------------------------------------------------
-#  httpuv::stopAllServers() # Stops all servers, now you should be able to relaunch the server
+# httpuv::stopAllServers() # Stops all servers, now you should be able to relaunch the server
 
 ## -----------------------------------------------------------------------------
 
@@ -97,10 +99,10 @@ opts <- list(size = 5, axis_title_size = 0.75, axis_label_size = 0.5)
 schema |> render(options = opts)
 
 ## -----------------------------------------------------------------------------
-#  scene <- create_schema(penguins) |> render(opts)
-#  
-#  scene |> add_histogram(c("bill_depth"))
-#  scene |> add_scatterplot(c("bill_depth", "flipper_length"))
-#  scene |> add_scatterplot(c("bill_depth", "body_mass"))
-#  ...
+# scene <- create_schema(penguins) |> render(opts)
+# 
+# scene |> add_histogram(c("bill_depth"))
+# scene |> add_scatterplot(c("bill_depth", "flipper_length"))
+# scene |> add_scatterplot(c("bill_depth", "body_mass"))
+# ...
 

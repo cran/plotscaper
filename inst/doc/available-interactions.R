@@ -59,8 +59,8 @@ schema |>
   render()
 
 ## -----------------------------------------------------------------------------
-#  # NOT RUN - this only works in an active R session
-#  scene |> get_scale("plot1", "x")
+# # NOT RUN - this only works in an active R session
+# scene |> get_scale("plot1", "x")
 
 ## -----------------------------------------------------------------------------
 schema |> 
